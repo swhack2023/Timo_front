@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const main = () => {
+const { kakao } = window;
+
+const Main = () => {
+    const [map,setMap] = useState(null);
+
+    //처음 지도 그리기
+    useEffect(()=>{
+        const container = document.getElementById('map');
+        const options = { center: new kakao.maps.LatLng(33.450701, 126.570667) };
+        const kakaoMap = new kakao.maps.Map(container, options);
+        setMap(kakaoMap);
+    },[])
+
     return (
-        <div>
-                메인임
+        <div
+            style={{
+                width: '100%',
+                display: 'inline-block',
+                marginLeft: '5px',
+                marginRight: '5px',
+            }}
+        >
+            <div id="map" style={{ width: '99%', height: '500px' }}></div>
         </div>
     );
 };
 
-export default main;
+export default Main;
