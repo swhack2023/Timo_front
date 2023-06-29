@@ -18,7 +18,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
 
-const Baby_sitter = () => {
+const Baby_sitter5 = () => {
   const onPanelChange = (value, mode) => {
     console.log(value.format('YYYY-MM-DD'), mode);
   };
@@ -28,7 +28,7 @@ const Baby_sitter = () => {
     borderRadius: token.borderRadiusLG,
   };
   const main = () => {
-    window.location.href = "/D_1"
+    window.location.href = "/D_5"
   }
   const [hour, setHour] = React.useState('');
   const [minute, setMinute] = React.useState('');
@@ -41,8 +41,8 @@ const Baby_sitter = () => {
     setMinute(event.target.value);
   };
 
-  const Rc1 = () => {
-    window.location.href = "/Rc"
+  const Rc5 = () => {
+    window.location.href = "/Rc_5"
   }
 
   return (
@@ -59,7 +59,7 @@ const Baby_sitter = () => {
             <ArrowBackIosIcon onClick={main} />
           </IconButton>
           <Typography variant="h6" component="div" edge="start" sx={{ flexGrow: 0.8 }}>
-            롯데캐슬프레미어아파트 101동
+            노블테라스아파트
           </Typography>
         </Toolbar>
       </AppBar>
@@ -113,7 +113,7 @@ const Baby_sitter = () => {
             >
               {[...Array(9)].map((_, index) => (
                 <MenuItem value={index + 9}>{index + 9}</MenuItem>
-                ))}
+              ))}
             </Select>
           </FormControl>
           <FormControl sx={{ m: 1, minWidth: 80 }}>
@@ -134,11 +134,11 @@ const Baby_sitter = () => {
         </Grid>
       </Grid>
       <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
-      <Button onClick={Rc1} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', width: '80%' }}>봐줄게요!</Button>
+      <Button onClick={Rc5} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', width: '80%' }}>봐줄게요!</Button>
       <br />
       <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginTop: '5px', width: '80%' }}>봐주세요!</Button>
     </Box>
   );
 };
 
-export default Baby_sitter;
+export default Baby_sitter5;

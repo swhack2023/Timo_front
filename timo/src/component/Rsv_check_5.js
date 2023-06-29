@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 
-const Rsv_check = () => {
+const Rsv_check_5 = () => {
     const main = () => {
         window.location.href = "/"
     }
@@ -36,7 +36,7 @@ const Rsv_check = () => {
             <br></br>
             <Grid container spacing={2} >
                 <Grid item xs={8} style={{ marginTop: "7px" }} >
-                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>롯데캐슬프레미어아파트</span>
+                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>노블테라스아파트</span>
                 </Grid>
             </Grid>
             <br />
@@ -53,7 +53,7 @@ const Rsv_check = () => {
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>이름</span>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
-                    <span style={{ color: '#525252', fontSize: '15px' }}>이지훈</span>
+                    <span style={{ color: '#525252', fontSize: '15px' }}>신종락</span>
                 </Grid>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>성별</span>
@@ -96,4 +96,4 @@ const Rsv_check = () => {
     );
 };
 
-export default Rsv_check;
+export default Rsv_check_5;

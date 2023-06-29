@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 
-const Rsv_check = () => {
+const Rsv_check_3 = () => {
     const main = () => {
         window.location.href = "/"
     }
@@ -36,7 +36,7 @@ const Rsv_check = () => {
             <br></br>
             <Grid container spacing={2} >
                 <Grid item xs={8} style={{ marginTop: "7px" }} >
-                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>롯데캐슬프레미어아파트</span>
+                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>삼성대우멤버스카운티1차</span>
                 </Grid>
             </Grid>
             <br />
@@ -47,25 +47,25 @@ const Rsv_check = () => {
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>일정</span>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
-                    <span style={{ color: '#525252', fontSize: '15px' }}>2023.06.30 (금) 오전 9:00</span>
+                    <span style={{ color: '#525252', fontSize: '15px' }}>2023.06.30 (금) 오후 13:00</span>
                 </Grid>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>이름</span>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
-                    <span style={{ color: '#525252', fontSize: '15px' }}>이지훈</span>
+                    <span style={{ color: '#525252', fontSize: '15px' }}>조영서</span>
                 </Grid>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>성별</span>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
-                    <span style={{ color: '#525252', fontSize: '15px' }}>남성</span>
+                    <span style={{ color: '#525252', fontSize: '15px' }}>여성</span>
                 </Grid>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>나이</span>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
-                    <span style={{ color: '#525252', fontSize: '15px' }}>26세</span>
+                    <span style={{ color: '#525252', fontSize: '15px' }}>3세</span>
                 </Grid>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
                     <span style={{ color: '#BFBFBF', fontSize: '15px' }}>연락처</span>
@@ -80,7 +80,7 @@ const Rsv_check = () => {
                 <br />
                 <Grid item xs={4} style={{ textAlign: 'left', }}>
                     <div style={{ backgroundColor: '#C6D93B', position: 'absolute', height: '15px' }}>
-                        <div style={{ fontWeight: 'bold', color: 'black', fontSize: '25px', position: 'relative', bottom: '15px' }}>봐줄게요!</div>
+                        <div style={{ fontWeight: 'bold', color: 'black', fontSize: '25px', position: 'relative', bottom: '15px' }}>봐주세요!</div>
                     </div>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
@@ -96,4 +96,4 @@ const Rsv_check = () => {
     );
 };
 
-export default Rsv_check;
+export default Rsv_check_3;
