@@ -18,7 +18,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
 
-const Baby_sitter2 = () => {
+const Baby_sitter = () => {
   const onPanelChange = (value, mode) => {
     console.log(value.format('YYYY-MM-DD'), mode);
   };
@@ -28,7 +28,7 @@ const Baby_sitter2 = () => {
     borderRadius: token.borderRadiusLG,
   };
   const main = () => {
-    window.location.href = "/D_2"
+    window.location.href = "/D_1"
   }
   const [hour, setHour] = React.useState('');
   const [minute, setMinute] = React.useState('');
@@ -41,8 +41,8 @@ const Baby_sitter2 = () => {
     setMinute(event.target.value);
   };
 
-  const Rc2 = () => {
-    window.location.href = "/Rc_2"
+  const Rc1 = () => {
+    window.location.href = "/Rc"
   }
 
   return (
@@ -59,7 +59,7 @@ const Baby_sitter2 = () => {
             <ArrowBackIosIcon onClick={main} />
           </IconButton>
           <Typography variant="h6" component="div" edge="start" sx={{ flexGrow: 0.8 }}>
-            롯데캐슬킹덤아파트
+            롯데캐슬프레미어아파트 101동
           </Typography>
         </Toolbar>
       </AppBar>
@@ -134,9 +134,10 @@ const Baby_sitter2 = () => {
         </Grid>
       </Grid>
       <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
-      <Button onClick={Rc2} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', marginRight: '20px', width: '35%', height: '45px' }}>돌봐줄게요!</Button>
-      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#FFF500', color: 'black', marginBottom: '5px', width: '35%', height: '45px' }}>돌봐주세요!</Button>    </Box>
+      <Button onClick={Rc1} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', marginRight: '20px', width: '35%', height: '45px' }}>돌봐줄게요!</Button>
+      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#FFF500', color: 'black', marginBottom: '5px', width: '35%', height: '45px' }}>돌봐주세요!</Button>
+    </Box>
   );
 };
 
-export default Baby_sitter2;
+export default Baby_sitter;

@@ -1,12 +1,15 @@
-import React from 'react';
+import { useAnimationFrame } from "framer-motion";
+import React, {useRef} from 'react';
+import Rc from '../img/Rc.png';
 
-const Baby_form = () => {
-    return (
-        <div>
-            <img src='https://timo-qr.s3.ap-northeast-2.amazonaws.com/qr.png'/>
-            
-        </div>
-    );
-};
+function Component() {
+  const ref = useRef(null);
 
-export default Baby_form;
+  useAnimationFrame((time, delta) => {
+    ref.current.style.transform = `rotateY(${time}deg)`;
+  });
+
+  return <div ref={ref}><img src={Rc} alt="Rc" /></div>;
+}
+
+export default Component;

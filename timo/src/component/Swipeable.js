@@ -57,8 +57,18 @@ const App = () => {
                     <ListItem>
                         <ListItemText >
                             <div style={{ fontSize: '12px', color: 'gray' }}>
+                                롯데캐슬 프레미어아파트<br/>
+                                사용시간: 09:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                            </div>
+                        </ListItemText>
+                    </ListItem>
+                    <Divider className='Divider' />
+                    <ListItem>
+                        <ListItemText >
+                            <div style={{ fontSize: '12px', color: 'gray' }}>
+                                롯데캐슬 킹덤아파트<br/>
 
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                                사용시간: 09:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~10명
                             </div>
                         </ListItemText>
                     </ListItem>
@@ -66,8 +76,8 @@ const App = () => {
                     <ListItem>
                         <ListItemText >
                             <div style={{ fontSize: '12px', color: 'gray' }}>
-
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                                삼성대우맴버스카운티1차 <br/>
+                                사용시간: 09:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~7명
                             </div>
                         </ListItemText>
                     </ListItem>
@@ -75,24 +85,8 @@ const App = () => {
                     <ListItem>
                         <ListItemText >
                             <div style={{ fontSize: '12px', color: 'gray' }}>
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
-                            </div>
-                        </ListItemText>
-                    </ListItem>
-                    <Divider className='Divider' />
-                    <ListItem>
-                        <ListItemText >
-                            <div style={{ fontSize: '12px', color: 'gray' }}>
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
-                            </div>
-                        </ListItemText>
-                    </ListItem>
-
-                    <Divider className='Divider' />
-                    <ListItem>
-                        <ListItemText >
-                            <div style={{ fontSize: '12px', color: 'gray' }}>
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                                삼성대우맴버스카운티2차 <br/>
+                                사용시간: 09:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~7명
                             </div>
                         </ListItemText>
                     </ListItem>
@@ -101,11 +95,13 @@ const App = () => {
                     <ListItem>
                         <ListItemText >
                             <div style={{ fontSize: '12px', color: 'gray' }}>
-                                사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                                노블테라스아파트<br/>
+                                사용시간: 09:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~5명
                             </div>
                         </ListItemText>
                     </ListItem>
 
+                
 
                 </List>
 

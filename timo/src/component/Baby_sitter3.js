@@ -134,10 +134,9 @@ const Baby_sitter3 = () => {
         </Grid>
       </Grid>
       <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
-      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', width: '80%' }}>봐줄게요!</Button>
-      <br />
-      <Button onClick={Rc3} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginTop: '5px', width: '80%' }}>봐주세요!</Button>
-    </Box>
+      <Button onClick={Rc3} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', marginRight: '20px', width: '35%', height: '45px' }}>돌봐줄게요!</Button>
+      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#FFF500', color: 'black', marginBottom: '5px', width: '35%', height: '45px' }}>돌봐주세요!</Button>
+      </Box>
   );
 };
 

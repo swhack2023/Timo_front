@@ -80,7 +80,7 @@ const Rsv_check_4 = () => {
                 <br />
                 <Grid item xs={4} style={{ textAlign: 'left', }}>
                     <div style={{ backgroundColor: '#C6D93B', position: 'absolute', height: '15px' }}>
-                        <div style={{ fontWeight: 'bold', color: 'black', fontSize: '25px', position: 'relative', bottom: '15px' }}>봐주세요!</div>
+                        <div style={{ fontWeight: 'bold', color: 'black', fontSize: '25px', position: 'relative', bottom: '15px' }}>돌봐주세요!</div>
                     </div>
                 </Grid>
                 <Grid item xs={10} style={{ textAlign: 'left' }}>
