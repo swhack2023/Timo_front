@@ -18,6 +18,10 @@ const Details_2 = () => {
         window.location.href = "/"
     }
 
+    const BS2 = () => {
+        window.location.href = "/BS2"
+    }
+
     return (
         <div style={{}} >
             <Nav />
@@ -28,7 +32,7 @@ const Details_2 = () => {
                 <ListItem>
                     <ListItemText >
                         <strong>
-                            e편한세상 110동 놀이방
+                            롯데캐슬킹덤아파트
                         </strong>
 
                     </ListItemText>
@@ -37,8 +41,8 @@ const Details_2 = () => {
 
                     <ListItemText >
                         <div style={{ fontSize: '14px', color: 'gray' }}>
-                            서울특별시 은평구 진관길 11-30<br />
-                            사용시간: 10:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~8명
+                            서울특별시 강남구 삼성동 43<br />
+                            사용시간: 9:00AM~17:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수용인원:1~10명
                         </div>
 
                     </ListItemText>
@@ -48,8 +52,8 @@ const Details_2 = () => {
                 <ListItem>
                     <ListItemText >
                         <div style={{ fontSize: '11px', color: 'gray' }}>
-                            e편한세상 110동 지하1층에 위치한 공동육아 놀이시설 입니다.<br />
-                            2세부터 6세까지 이용가능한 시설입니다.
+                            삼성롯데캐슬킹덤아파트 101동 지하1층에 위치한 공동육아 놀이시설 입니다.<br />
+                            3세부터 7세까지 이용가능한 시설입니다.
                         </div>
 
                     </ListItemText>
@@ -62,7 +66,7 @@ const Details_2 = () => {
                         <div style={{ fontSize: '11px', color: 'gray' }}>
                             <div style={{ fontSize: '15px' }}>주의 사항</div>
                             *해당 시설은 2세부터 6세까지 이용가능한 시설입니다.
-                            *중식이 제공되며 알러지 밑 특이사항이 있다면 사전에 고지해주세요
+                            *중식이 제공되지않으며 개인 도시락 지참해주세요
                             *인원초과시, 일과 육아를 병행하는 학부모님에게 우선권이 주어집니다.
                             *아이에게 특이사항이 있다면 담당 선생님께 전달 부탁드립니다
                         </div>
@@ -79,7 +83,7 @@ const Details_2 = () => {
                         </Button>
                     </Grid>
                     <Grid item xs={10}>
-                        <Button onClick={main} style={{ backgroundColor: '#CBE23A', color: 'black', width: '90%' }}>
+                        <Button onClick={BS2} style={{ backgroundColor: '#CBE23A', color: 'black', width: '90%' }}>
                             예약하기
                         </Button>
                     </Grid>
