@@ -18,10 +18,12 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 200,
-    height: 200,
+    width: 230,
+    height: 230,
     bgcolor: 'background.paper',
     p: 4,
+    borderRadius:'30px'
+   
    
   
   };
@@ -122,39 +124,39 @@ const Rsv_check_5 = () => {
             
             </div>
             <img src={Rc} style={{marginTop:'170px', }} />
+    {/*모달  */}
+    <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            
+            >
+                <Box sx={style} style={{position:'absolute'}}>
+                <Typography variant="h6" component="h2">
+                <div style={{backgroundColor:'#CBE23A' , position:'relative', top:'-20px',height:'10px', right:'10px',width:'85%' }}>
+                    <p style={{position:'relative', top:"-18px", fontWeight:'bold'}}>예약 신청되었습니다.</p> 
+                    <p style={{color:'gray', position:'relative', fontSize:'14px', top:'-38px' }}>QR코드를 확인해주세요.</p>
+                </div>
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }} 
+                style={{display:'flex', 
+                        justifyContent:'center',
+                        marginTop:'18px'
+                        }}>
+                    <img src='https://timo-qr.s3.ap-northeast-2.amazonaws.com/qr.png'/>
 
-                 {/*모달  */}
-                 <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
+                </Typography>
+
+                <Button onClick={handleClose} style={{backgroundColor:'#CBE23A' , color:'white', width:'294px', marginLeft:'-32px', marginTop:'30px', borderBottomLeftRadius:'30px', borderBottomRightRadius:'30px'}}>
+                        확인
+                </Button>
                 
-                >
-                    <Box sx={style} style={{position:'absolute'}}>
-                    <Typography variant="h6" component="h2">
-                    <div style={{backgroundColor:'#CBE23A' , position:'relative', top:'-30px',height:'15px', right:'20px' }}>
-                        <p style={{fontWeight:'bold',position:'relative', top:"-15px"}}>예약 신청되었습니다.</p> 
-                        <p style={{color:'gray', position:'relative', fontSize:'10px', top:'-30px' }}>QR코드를 확인해주세요.</p>
-                    </div>
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }} 
-                    style={{display:'flex', 
-                            justifyContent:'center',
-                            marginTop:'-5px'
-                            }}>
-                        <img src='https://timo-qr.s3.ap-northeast-2.amazonaws.com/qr.png'/>
-
-                    </Typography>
-
-                    <Button onClick={handleClose} style={{backgroundColor:'#CBE23A' , color:'white', width:'264px', marginLeft:'-32px', marginTop:'20px'}}>
-                            확인
-                    </Button>
-                    
-                    </Box>
+                </Box>
+            
                 
-                    
-                </Modal>
+            </Modal>
+
 
 
 
