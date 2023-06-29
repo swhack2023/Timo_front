@@ -15,8 +15,8 @@ function App() {
   return (
 
  
-    <div className="App"    style={{maxWidth:'400px',maxHeight:'800px' ,margin:'auto',  }}  >
-   
+    <div className="App"    style={{maxWidth:'400px',maxHeight:'800px' ,margin:'auto', }}  >
+       
       <BrowserRouter>
         <Routes>
         
