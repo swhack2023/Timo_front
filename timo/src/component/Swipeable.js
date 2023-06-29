@@ -36,7 +36,7 @@ const App = () => {
 
 
     return (
-        <div style={{ marginTop: -100 }}>
+        <div >
             <Nav />
             <Map />
             <div>

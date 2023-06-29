@@ -1,20 +1,27 @@
 import React from 'react';
 import Nav from './Navar';
 import './mapstyle.css';
-import data_1 from '../img/Data_1.jpg';
+
 import Button from '@mui/material/Button';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Divider from '@mui/material/Divider';
-
 import Grid from '@mui/material/Grid';
 
+
+import data_2 from '../img/Data_2.jpg';
+
 const Details_2 = () => {
+
+    const main = () => {
+        window.location.href = "/"
+    }
+
     return (
         <div style={{}} >
             <Nav />
-            <img src={data_1} className='mintlover' />
+            <img src={data_2} className='mintlover' />
 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'c' }}>
 
@@ -64,19 +71,20 @@ const Details_2 = () => {
                 </ListItem>
             </div>
 
-            <Grid container spacing={2} style={{marginTop:'10px'}}>
-            <Grid item xs={2}>
-            <Button variant="contained" disabled >
-               <ArrowBackIosIcon/>
-            </Button>
-            </Grid>
-            <Grid item xs={10}>
-            <Button    style={{backgroundColor:'#CBE23A',color:'black',width:'90%'}}>
-               예약하기
-            </Button>
-            </Grid>
-            </Grid>
-
+            <div style={{ marginTop: '190px', marginLeft: '15px' }}>
+                <Grid container spacing={2} style={{ marginTop: '10px' }}>
+                    <Grid item xs={2}>
+                        <Button variant="contained" onClick={main} style={{ backgroundColor: 'gray' }}>
+                            <ArrowBackIosIcon />
+                        </Button>
+                    </Grid>
+                    <Grid item xs={10}>
+                        <Button onClick={main} style={{ backgroundColor: '#CBE23A', color: 'black', width: '90%' }}>
+                            예약하기
+                        </Button>
+                    </Grid>
+                </Grid>
+            </div>
 
         </div>
     );

@@ -7,10 +7,19 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Divider from '@mui/material/Divider';
-
 import Grid from '@mui/material/Grid';
 
+
 const Details = () => {
+
+
+    
+    const main = () => {
+    window.location.href = "/"
+    }
+  
+  
+
     return (
         <div style={{}} >
             <Nav />
@@ -63,20 +72,21 @@ const Details = () => {
                     </ListItemText>
                 </ListItem>
             </div>
-
+            <div style={{marginTop:'180px', marginLeft:'15px'}}>
             <Grid container spacing={2} style={{marginTop:'10px'}}>
             <Grid item xs={2}>
-            <Button variant="contained" disabled >
+            <Button variant="contained"  onClick={main} style={{backgroundColor:'gray'}}>
                <ArrowBackIosIcon/>
             </Button>
             </Grid>
             <Grid item xs={10}>
-            <Button    style={{backgroundColor:'#CBE23A',color:'black',width:'90%'}}>
+            <Button onClick={main}   style={{backgroundColor:'#CBE23A',color:'black',width:'90%'}}>
                예약하기
             </Button>
             </Grid>
             </Grid>
 
+            </div>
 
         </div>
     );

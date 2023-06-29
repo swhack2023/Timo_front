@@ -35,7 +35,7 @@ const MapComponent = () => {
             '            <div class="desc">' + 
             '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
             '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
-            '                <div><a href="/BF" class="link">홈페이지</a></div>' + 
+            '                <div><a href="/D_4" class="link">홈페이지</a></div>' + 
             '            </div>' + 
             '        </div>' + 
             '    </div>' +    
@@ -57,7 +57,7 @@ const MapComponent = () => {
         '            <div class="desc">' + 
         '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
         '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
-        '                <div><a href="/BF" class="link">홈페이지</a></div>' + 
+        '                <div><a href="/D_3" class="link">홈페이지</a></div>' + 
         '            </div>' + 
         '        </div>' + 
         '    </div>' +    
@@ -79,7 +79,7 @@ const MapComponent = () => {
         '            <div class="desc">' + 
         '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
         '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
-        '                <div><a href="/BF" class="link">홈페이지</a></div>' + 
+        '                <div><a href="/D_2" class="link">홈페이지</a></div>' + 
         '            </div>' + 
         '        </div>' + 
         '    </div>' +    
@@ -101,7 +101,7 @@ const MapComponent = () => {
         '            <div class="desc">' + 
         '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
         '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
-        '                <div><a href="/BF" class="link">홈페이지</a></div>' + 
+        '                <div><a href="/D_1" class="link">홈페이지</a></div>' + 
         '            </div>' + 
         '        </div>' + 
         '    </div>' +    
@@ -146,7 +146,7 @@ const MapComponent = () => {
   }, [openOverlayIndex]);
 
   return (
-    <div id="map" style={{ width: '100%', height: '640px' }}></div>
+    <div id="map" style={{ width: '100%', height: '740px' }}></div>
   );
 };
 
