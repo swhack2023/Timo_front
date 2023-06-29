@@ -7,10 +7,12 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+
+import log from '../img/log.png';
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor:'red'}} >
+      <AppBar position="static" style={{backgroundColor:'#CBE23A'}} >
         <Toolbar>
           <IconButton
             size="large"
@@ -20,7 +22,7 @@ export default function ButtonAppBar() {
             sx={{ mr: 2 }}
           >
          <Typography variant="h6" component="div" edge="start" sx={{ flexGrow: 1 }}  >
-            TIMO
+           <img src={log}/>
           </Typography>
             
           </IconButton>

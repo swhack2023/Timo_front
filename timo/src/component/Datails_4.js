@@ -10,7 +10,7 @@ import Divider from '@mui/material/Divider';
 
 import Grid from '@mui/material/Grid';
 
-const Details = () => {
+const Details4 = () => {
     return (
         <div style={{}} >
             <Nav />
@@ -82,4 +82,4 @@ const Details = () => {
     );
 };
 
-export default Details;
+export default Details4;

@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './mapstyle.css';
 const { kakao } = window;
 
-const Main = () => {
-  const [map, setMap] = useState(null);
-  const [infoWindow, setInfoWindow] = useState(null);
+const MapComponent = () => {
+  const [openOverlayIndex, setOpenOverlayIndex] = useState(null);
+  const overlays = useRef([]);
+  const mapRef = useRef(null);
+
+  const closeOverlay = () => setOpenOverlayIndex(null);
 
   useEffect(() => {
     const mapContainer = document.getElementById('map');
-    const mapOptions = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
-      level: 3
+    const mapOption = {
+      center: new kakao.maps.LatLng(33.451475, 126.570528),
+      level: 3,
     };
 
-    const kakaoMap = new kakao.maps.Map(mapContainer, mapOptions);
-    setMap(kakaoMap);
+    const map = new kakao.maps.Map(mapContainer, mapOption);
 
+    mapRef.current = map;
     const positions = [
       {
         content:
@@ -107,74 +110,44 @@ const Main = () => {
       }
     ];
 
-    positions.forEach((position) => {
+
+    positions.forEach((position, index) => {
       const marker = new kakao.maps.Marker({
-        map: kakaoMap,
-        position: position.latlng
+        map: map,
+        position: position.latlng,
       });
 
-      const infowindow = new kakao.maps.InfoWindow({
-        content: position.content
+      const overlay = new kakao.maps.CustomOverlay({
+        content: position.content.replace('title="닫기"', `title="닫기" onclick="window.closeOverlay(${index})"`),
+        map: null,
+        position: position.latlng,
       });
 
-      kakao.maps.event.addListener(marker, 'click', makeClickListener(kakaoMap, marker, infowindow));
+      overlays.current[index] = overlay;
+
+      kakao.maps.event.addListener(marker, 'click', () => {
+        setOpenOverlayIndex(index);
+      });
     });
+
+    window.closeOverlay = (index) => {
+      overlays.current[index].setMap(null);
+    };
   }, []);
 
-  const makeClickListener = (map, marker, infowindow) => {
-    return function () {
-      if (infoWindow) {
-        infoWindow.close();
-      }
-      infowindow.open(map, marker);
-      setInfoWindow(infowindow);
-    };
-  };
-
   useEffect(() => {
-    const handleMapClick = () => {
-      if (infoWindow) {
-        infoWindow.close();
-        setInfoWindow(null);
+    overlays.current.forEach((overlay, index) => {
+      if (index === openOverlayIndex) {
+        overlay.setMap(mapRef.current);
+      } else {
+        overlay.setMap(null);
       }
-    };
-
-    if (map) {
-      kakao.maps.event.addListener(map, 'click', handleMapClick);
-    }
-
-    return () => {
-      if (map) {
-        kakao.maps.event.removeListener(map, 'click', handleMapClick);
-      }
-    };
-  }, [map, infoWindow]);
-
-  useEffect(() => {
-    const closeOverlay = () => {
-      if (infoWindow) {
-        infoWindow.close();
-        setInfoWindow(null);
-      }
-    };
-
-    const closeButtons = document.getElementsByClassName('close');
-    for (let i = 0; i < closeButtons.length; i++) {
-      closeButtons[i].addEventListener('click', closeOverlay);
-    }
-
-    return () => {
-      for (let i = 0; i < closeButtons.length; i++) {
-        closeButtons[i].removeEventListener('click', closeOverlay);
-      }
-    };
-  }, [infoWindow]);
+    });
+  }, [openOverlayIndex]);
 
   return (
-    <div>
-      <div id="map" style={{ width: '99%', height: '650px' }}></div>
-    </div>
+    <div id="map" style={{ width: '100%', height: '640px' }}></div>
   );
 };
 
-export default Main;
+export default MapComponent;
