@@ -18,6 +18,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
 
+import Chip from '@mui/material/Chip';
+
 const Baby_sitter3 = () => {
   const onPanelChange = (value, mode) => {
     console.log(value.format('YYYY-MM-DD'), mode);
@@ -93,9 +95,13 @@ const Baby_sitter3 = () => {
         <Grid item xs={4} style={{ marginTop: "7px" }}>
           <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>연락처</span>
         </Grid>
-        <Grid item xs={8}>
-          <TextField id="outlined-size-small" size="small" />
+        <Grid item xs={6}>
+          <TextField id="outlined-size-small" size="small" style={{width:'150px', }} />
         </Grid>
+        <Grid item xs={2}>
+          <Chip label="인증" style={{marginLeft:'-45px'}} />
+        </Grid>
+
         <Divider style={{ marginTop: '15px', marginBottom: '-10px' }} />
         <Grid item xs={4} style={{ marginTop: "22px" }}>
           <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>시간</span>
@@ -110,6 +116,7 @@ const Baby_sitter3 = () => {
               onChange={handleHourChange}
               autoWidth
               label="시"
+              style={{height:'50px'}}
             >
               {[...Array(9)].map((_, index) => (
                 <MenuItem value={index + 9}>{index + 9}</MenuItem>
@@ -125,6 +132,7 @@ const Baby_sitter3 = () => {
               onChange={handleMinuteChange}
               autoWidth
               label="분"
+              style={{height:'50px'}}
             >
               {[...Array(60)].map((_, index) => (
                 <MenuItem value={index}>{index}</MenuItem>

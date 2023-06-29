@@ -63,7 +63,7 @@ export default function ButtonAppBar() {
         <Box sx={style} style={{position:'absolute'}}>
           <Typography variant="h6" component="h2">
            <div style={{backgroundColor:'#CBE23A' , position:'relative', top:'-30px',height:'15px', right:'20px' }}>
-              <p style={{position:'relative', top:"-15px"}}>예약 신청되었습니다.</p> 
+              <p style={{position:'relative', top:"-15px", fontWeight:'bold'}}>예약 신청되었습니다.</p> 
               <p style={{color:'gray', position:'relative', fontSize:'10px', top:'-30px' }}>QR코드를 확인해주세요.</p>
            </div>
           </Typography>

@@ -17,6 +17,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
+import Chip from '@mui/material/Chip';
+
 
 const Baby_sitter5 = () => {
   const onPanelChange = (value, mode) => {
@@ -90,16 +92,24 @@ const Baby_sitter5 = () => {
           <FormControlLabel value="male" control={<Radio style={{ color: '#CBCBCB' }} />} label={<span style={{ color: '#797979' }}>여성</span>} />
         </Grid>
         <Divider style={{ marginTop: '10px', marginBottom: '1px' }} />
-        <Grid item xs={4} style={{ marginTop: "7px" }}>
-          <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>연락처</span>
+        <Grid item xs={4} style={{ marginTop: "7px", }}>
+          <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px',  }}>연락처</span>
         </Grid>
-        <Grid item xs={8}>
-          <TextField id="outlined-size-small" size="small" />
+        <Grid item xs={6}>
+          <TextField id="outlined-size-small" size="small" style={{width:'150px', }} />
         </Grid>
+        <Grid item xs={2}>
+          <Chip label="인증" style={{marginLeft:'-45px'}} />
+        </Grid>
+
+
+
         <Divider style={{ marginTop: '15px', marginBottom: '-10px' }} />
         <Grid item xs={4} style={{ marginTop: "22px" }}>
           <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>시간</span>
         </Grid>
+
+
         <Grid item xs={8}>
           <FormControl sx={{ m: 1, minWidth: 80 }}>
             <InputLabel id="hour-label">시</InputLabel>
@@ -110,12 +120,14 @@ const Baby_sitter5 = () => {
               onChange={handleHourChange}
               autoWidth
               label="시"
+              style={{height:'50px'}}
             >
               {[...Array(9)].map((_, index) => (
-                <MenuItem value={index + 9}>{index + 9}</MenuItem>
+                <MenuItem value={index + 9} >{index + 9}</MenuItem>
               ))}
             </Select>
           </FormControl>
+
           <FormControl sx={{ m: 1, minWidth: 80 }}>
             <InputLabel id="minute-label">분</InputLabel>
             <Select
@@ -125,6 +137,7 @@ const Baby_sitter5 = () => {
               onChange={handleMinuteChange}
               autoWidth
               label="분"
+              style={{height:'50px'}}
             >
               {[...Array(60)].map((_, index) => (
                 <MenuItem value={index}>{index}</MenuItem>

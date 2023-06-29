@@ -28,7 +28,7 @@ const Details = () => {
             <Nav />
             <img src={data_1} className='mintlover' />
 
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'c' }}>
+            <div style={{ display: 'flex', flexDirection: 'column',  }}>
 
                 <ListItem>
                     <ListItemText >
@@ -75,7 +75,7 @@ const Details = () => {
                     </ListItemText>
                 </ListItem>
             </div>
-            <div style={{ marginTop: '180px', marginLeft: '15px' }}>
+            <div style={{ marginTop: '160px', marginLeft: '15px' }}>
                 <Grid container spacing={2} style={{ marginTop: '10px' }}>
                     <Grid item xs={2}>
                         <Button variant="contained" onClick={main} style={{ backgroundColor: 'gray' }}>
@@ -91,6 +91,7 @@ const Details = () => {
 
             </div>
 
+           
         </div>
     );
 };
