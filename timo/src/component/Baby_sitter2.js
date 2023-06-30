@@ -67,7 +67,7 @@ const Baby_sitter2 = () => {
       <div style={wrapperStyle}>
         <Calendar fullscreen={false} onPanelChange={onPanelChange} />
       </div>
-      <Divider style={{ marginTop: '8px', marginBottom: '15px' }} />
+      <br/>
       <Grid container spacing={2}>
         <Grid item xs={4} style={{ marginTop: "7px" }}>
           <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>이름</span>
@@ -103,7 +103,7 @@ const Baby_sitter2 = () => {
 
 
         <Divider style={{ marginTop: '15px', marginBottom: '-10px' }} />
-        <Grid item xs={4} style={{ marginTop: "22px" }}>
+        <Grid item xs={3} style={{ marginLeft: "12px", marginTop: "22px" }}>
           <span style={{ fontWeight: 'bold', color: '#5A5A5A', fontSize: '18px' }}>시간</span>
         </Grid>
         <Grid item xs={8}>
@@ -141,9 +141,9 @@ const Baby_sitter2 = () => {
           </FormControl>
         </Grid>
       </Grid>
-      <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
-      <Button onClick={Rc2} variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', marginRight: '20px', width: '35%', height: '45px' }}>돌봐줄게요!</Button>
-      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#FFF500', color: 'black', marginBottom: '5px', width: '35%', height: '45px' }}>돌봐주세요!</Button>    </Box>
+      <br/>
+      <Button variant="contained" size="large" disableElevation style={{ backgroundColor: '#C6D93B', color: 'black', marginBottom: '5px', marginRight: '20px', width: '35%', height: '45px' }}>돌봐줄게요!</Button>
+      <Button onClick={Rc2} variant="contained" size="large" disableElevation style={{ backgroundColor: '#FFF500', color: 'black', marginBottom: '5px', width: '35%', height: '45px' }}>돌봐주세요!</Button>    </Box>
   );
 };
 

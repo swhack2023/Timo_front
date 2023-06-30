@@ -12,7 +12,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import QrCode2Icon from '@mui/icons-material/QrCode2';
-
+import kikiki from '../img/ki_ki.gif';
 const style = {
     position: 'absolute',
     top: '50%',
@@ -123,9 +123,10 @@ const Rsv_check_5 = () => {
             </Grid>
             
             </div>
-            <img src={Rc} style={{marginTop:'170px', }} />
-    {/*모달  */}
-    <Modal
+
+            <img src={kikiki} style={{width:'390px' , marginTop:'110px' }}  />
+            {/*모달  */}
+            <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"

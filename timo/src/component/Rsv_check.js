@@ -70,14 +70,14 @@ const Rsv_check = () => {
                     
                 </Toolbar>
             </AppBar>
-            <br></br>
+
+            <br></br><br></br>
             <Grid container spacing={2} >
-                <Grid item xs={8} style={{ marginTop: "7px" }} >
-                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>롯데캐슬프레미어아파트</span>
+                <Grid item xs={9} style={{ marginLeft:"12px", marginTop: "7px" }} >
+                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '22px' }}>롯데캐슬프레미어아파트</span>
                 </Grid>
             </Grid>
             <br />
-            <Box style={{ marginTop: '-30px', marginLeft: '25px', marginBottom: '30px', backgroundColor: '#C6D93B', height: '2px', width: '90%' }}><Divider /></Box>
 
             <Grid container spacing={2} style={{ marginLeft: "20px" }}>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
@@ -159,7 +159,7 @@ const Rsv_check = () => {
 
                 </Typography>
 
-                <Button onClick={handleClose} style={{backgroundColor:'#CBE23A' , color:'white', width:'294px', marginLeft:'-32px', marginTop:'30px', borderBottomLeftRadius:'30px', borderBottomRightRadius:'30px'}}>
+                <Button onClick={handleClose} style={{backgroundColor:'#CBE23A' , color:'white', width:'294px', marginLeft:'-32px', marginTop:'30px', borderBottomLeftRadius:'30px', borderBottomRightRadius:'30px', height:'50px'}}>
                         확인
                 </Button>
                 

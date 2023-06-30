@@ -12,8 +12,8 @@ const MapComponent = () => {
   useEffect(() => {
     const mapContainer = document.getElementById('map');
     const mapOption = {
-      center: new kakao.maps.LatLng(37.511119,127.059217),
-      level: 7,
+      center: new kakao.maps.LatLng(37.515524, 127.045115),
+      level: 5,
     };
 
     const map = new kakao.maps.Map(mapContainer, mapOption);
@@ -25,7 +25,7 @@ const MapComponent = () => {
             '<div class="wrap">' + 
             '    <div class="info">' + 
             '        <div class="title">' + 
-            '           롯데캐슬프레미어아파트 101동' + 
+            '           롯데캐슬프레미어아파트' + 
             '            <div class="close" title="닫기"></div>' + 
             '        </div>' + 
             '        <div class="body">' + 
@@ -46,7 +46,7 @@ const MapComponent = () => {
         '<div class="wrap">' + 
         '    <div class="info">' + 
         '        <div class="title">' + 
-        '           삼성롯데캐슬킹덤아파트 101동' + 
+        '           롯데캐슬킹덤아파트' + 
         '            <div class="close" title="닫기"></div>' + 
         '        </div>' + 
         '        <div class="body">' + 

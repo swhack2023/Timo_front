@@ -12,7 +12,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import QrCode2Icon from '@mui/icons-material/QrCode2';
-
+import kikiki from '../img/ki_ki.gif';
 const style = {
     position: 'absolute',
     top: '50%',
@@ -64,14 +64,13 @@ const Rsv_check_3 = () => {
                     
                 </Toolbar>
             </AppBar>
-            <br></br>
+            <br></br><br></br>
             <Grid container spacing={2} >
-                <Grid item xs={8} style={{ marginTop: "7px" }} >
-                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>삼성대우멤버스카운티1차</span>
+                <Grid item xs={9} style={{ marginLeft:"15px", marginTop: "7px" }} >
+                    <span style={{ fontWeight: 'bold', color: 'black', fontSize: '22px' }}>삼성대우멤버스카운티1차</span>
                 </Grid>
             </Grid>
             <br />
-            <Box style={{ marginTop: '-30px', marginLeft: '25px', marginBottom: '30px', backgroundColor: '#C6D93B', height: '2px', width: '90%' }}><Divider /></Box>
 
             <Grid container spacing={2} style={{ marginLeft: "20px" }}>
                 <Grid item xs={2} style={{ textAlign: 'left' }}>
@@ -119,7 +118,7 @@ const Rsv_check_3 = () => {
                 </Grid>
             </Grid>
 
-            <img src={Rc} style={{marginTop:'170px'}}/>
+            <img src={kikiki} style={{width:'390px' , marginTop:'110px' }}  />
 
             {/*모달  */}
             <Modal
