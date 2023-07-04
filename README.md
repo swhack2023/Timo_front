@@ -35,7 +35,7 @@
 <br>
 
 ## 4️⃣ 시연 영상 <br>
-[![Video Label](http://img.youtube.com/vi/[59USvjy2toI](https://youtu.be/CfdHJzcty7s)/0.jpg)](https://youtu.be/[59USvjy2toI](https://youtu.be/CfdHJzcty7s))
+[![공동육아 플랫폼 KIKI](http://img.youtube.com/vi/'https://youtu.be/CfdHJzcty7s'/0.jpg)](https://youtu.be/'https://youtu.be/CfdHJzcty7s')
 
 ## 5️⃣ 팀원
 
