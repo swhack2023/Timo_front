@@ -39,7 +39,6 @@
 
 
 
-[![이미지 텍스트](스크린샷 이미지)](https://youtu.be/CfdHJzcty7s)
 
 
 
